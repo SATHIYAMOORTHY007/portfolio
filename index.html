@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+  * {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  color: white;
+}
+#welcome-section {
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20%;
+  background-color: black;
+  color: aliceblue;
+  font-size: 30px;
+}
+#nav-bar {
+  background-color: brown;
+  width: 100%;
+  height: 20%;
+  text-align: right;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+ul > li {
+  display: inline-block;
+  padding: 2rem;
+}
+p {
+  color: purple;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+ul > li:hover {
+  pointer-events: all;
+  background-color: blue;
+  cursor: pointer;
+}
+/* project session */
+#projects {
+  background-color: rgb(0, 51, 102);
+  text-align: center;
+  height: 100vw;
+}
+.project-tile {
+  margin: 0 auto 0 auto;
+  font-size: 3rem;
+  padding: 7rem 0 0 0;
+  border-bottom: 2px solid white;
+  width: 50%;
+}
+.image-1,
+.image-3,
+.image-2 {
+  background-color: springgreen;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px black;
+}
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 2%;
+  margin-top: 2rem;
+}
+.images header {
+  background-color: silver;
+  font-size: 20px;
+}
+/* cantact */
+#contact {
+  display: block;
+  background-color: rgb(77, 77, 77);
+  height: 100vw;
+  color: black;
+  position: relative;
+}
+#contact h1 {
+  font-size: 60px;
+  text-align: center;
+  padding: 14% 0 0 0;
+  font-family: sans-serif;
+}
+#contact h3 {
+  font-size: 30px;
+  text-align: center;
+  padding: 0 0 2px 0;
+  font-style: italic;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.fa-linkedin {
+  color: white;
+  padding: 2rem;
+}
+.fa-facebook {
+  padding: 2rem;
+}
+.fa-twitter {
+  padding: 2rem;
+}
+.fa-github {
+  padding: 2rem;
+}
+@media only screen and (max-width: 1250px) {
+   *{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16pxpx;
+   }
+ #projects{
+    background-color:lightslategray;
+    height:1700px;
+ }
+ .images{
+    display: grid;
+ }
+ .image-1,.image-2,.image-3
+ {
+    width:50%;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+#nav-links{
+    display:flex;
+}
+}
+</style>
+<body>
+  
+    <nav id="nav-bar">
+        <ul id="nav-links">
+          <li><a href="#welcome-section">About</a></li>
+           <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+  <section id="welcome-section">
+      <h1>Hey I am SATHIYA MOORTHY S</h1>
+      <p>a web developer</p>
+  </section>
+   <!------project session-->
+   <section id="projects">
+      <h1 class="project-tile">These are some of my projects</h1>
+      <div class="images">
+              <div class="image-1">
+                <img src="pro2.png" width="400px" height="400px">
+                <header>Technical Doc</header>
+              </div>
+                <div class="image-2">
+                  <img src="pro3.png" width="400px" height="400px">
+                  <header>Survey From</header>
+                </div>
+            <div class="image-3">
+              <img src="pro4.png" width="400px"  height="400px">
+              <header>product landing</header>
+              </div>
+        </div>
+   </section>
+     
+    <section id="contact">
+      <h1>Let's work together...</h1>
+      <h3>How do you take your coffee?</span>
+        <div class="social-media">
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a  href="#" class="fa fa-github" ></a>
+      </div>
+      </section>
+  
+</body>
+</html>
